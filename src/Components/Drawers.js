@@ -50,7 +50,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function Drawers(props) {
   const classes = useStyles();
-  
+
   return(
       <Drawer className={{width: drawerWidth, flexShrink: 0}} variant="persistent" anchor="left" open={props.open}
         classes={{ paper: classes.drawerPaper}}>
@@ -60,6 +60,8 @@ export default function Drawers(props) {
           </IconButton>
         </div>
       <Divider />
+
+      {/*Clickable links list*/}
       <List>
         <Links link="/teste" text="Teste" />
         <Links link="/teste1" text="Teste1" />

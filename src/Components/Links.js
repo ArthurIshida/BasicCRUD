@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Link, Redirect } from 'react-router-dom';
 export default function Links(props){
   var icon;
 
+  /*If home render icon else render title*/
   if(props.text === "home"){
     icon = <IconButton style={props.style} onClick={<Redirect to={`${props.link}`}/>}>
               <HomeIcon />

@@ -1,7 +1,7 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Drawers from './Drawers';
 import Dashboard from './Dashboard';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Input from './Input';
 import Switches from './Switches';
 import Containers from './Containers';
@@ -17,6 +17,7 @@ export default function Main(){
               </Route>
               <Route exact path="/teste">
                 <Bar />
+                {/*Input without event does not allow change*/}
                 <Input text="" value="" changeValue=""/>
               </Route>
               <Route exact path="/teste1">

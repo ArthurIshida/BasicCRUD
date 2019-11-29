@@ -10,6 +10,7 @@ export default function Dashboard(){
 
   return(
     <div>
+      {/*handleChange passes drawer state to Bar and Drawers(open, closed)*/}
       <Bar onClick={handleChange} open={drawer} />
       <Drawers onClick={handleChange} open={drawer} />
       <Containers />
